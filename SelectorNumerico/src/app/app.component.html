@@ -1,0 +1,9 @@
+
+<router-outlet></router-outlet>
+
+<div class="p-5 m-3">
+  <app-selectornumerico minimo="1" maximo="10" #selector1></app-selectornumerico><br>
+  <button (click)="selector1.fijar(1)" class="btn btn-secondary my-2">Fijar en 1</button><br>
+  <button (click)="selector1.fijar(5)" class="btn btn-secondary my-2">Fijar en 5</button><br>
+  <button (click)="selector1.fijar(10)" class="btn btn-secondary my-2">Fijar en 10</button>
+</div>

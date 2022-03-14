@@ -1,0 +1,12 @@
+<router-outlet></router-outlet>
+<div class="d-flex flex-row justify-content-center">
+  <app-dado [numero]="valor1"></app-dado>
+  <app-dado [numero]="valor2"></app-dado>
+  <app-dado [numero]="valor3"></app-dado>
+</div>
+<div class="container bg-light my-4">
+  <div class="col-md-12 text-center">
+    <button (click)="tirar()" class="btn btn-primary">Tirar</button>
+  </div>
+</div>
+<p class="text-center">Resultado:  {{resultado}}</p>

@@ -1,0 +1,16 @@
+<table *ngIf="datos.length > 0" class="text-center border border-dark m-3">
+  <thead>
+    <tr>
+      <th class="p-2 border-bottom border-dark">Codigo</th>
+      <th class="p-2 border-bottom border-dark">Descripcion</th>
+      <th class="p-2 border-bottom border-dark">Precio</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let art of datos">
+      <td class="p-2 border border-dark">{{art.codigo}}</td>
+      <td class="p-2 border border-dark">{{art.descripcion}}</td>
+      <td class="p-2 border border-dark">{{art.precio}}</td>
+    </tr>
+  </tbody>
+</table>
